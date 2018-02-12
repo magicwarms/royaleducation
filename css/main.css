@@ -1,0 +1,886 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+
+
+
+
+/* ==========================================================================
+   Main classes by Riva Yudha for Duotonal HTML Template
+   ========================================================================== */
+
+
+body {
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.add-oveflow {
+    overflow: hidden;
+}
+
+main {
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#style2 main {
+    background: url(../img/bg2.jpg) no-repeat; // change the bg img url here
+    background-size: cover;
+}
+
+#style3 main {
+    background: url(../img/bg3.jpg) no-repeat; // change the bg img url here
+    background-size: cover;
+}
+
+#style4 main {
+    background: url(../img/bg4.jpg) no-repeat; // change the bg img url here
+    background-size: cover;
+}
+
+#style5 main {
+    background: url(../img/bg1.jpg) no-repeat; // change the bg img url here
+    background-size: cover;
+}
+
+
+    main section {
+        padding-right: 5rem;
+    }
+
+
+
+
+
+.imager {
+    width: 100vw;
+    height: 100vh;
+    z-index: 2
+}
+
+    .imager img {
+        width: 100%;
+    }
+
+.logo-wrapper {
+    margin-bottom: 15px;
+}
+
+.captioner h2 {
+    color: #f3f3f3;
+    font-size: 2.5em;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.captioner span {
+    color: #fefefe;
+}
+
+
+
+
+
+/* Preloader started */
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    z-index: 9999;
+    transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    -webkit-transition: none;
+}
+
+.preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+    .preloader p {
+        padding-left: 40px;
+    }
+
+    .preloader div {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 6px solid #18FD91
+    }
+
+        .preloader div:nth-child(2) {
+            border: 6px solid #fed501
+        }
+
+        .preloader div:nth-child(3) {
+            border: 6px solid #444
+        }
+
+        .preloader div:nth-child(4) {
+            border: 6px solid #5A87FF
+        }
+
+
+.former a {
+    text-decoration: none;
+    font-weight: normal;
+    color: inherit;
+}
+
+.former #button-subscribe {
+    opacity: 0;
+    transform: translateY(-250px);
+    color: #ffd600;
+    transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
+    .former #button-subscribe:hover, input#subscribe-form-submit:hover {
+        background: #444;
+        box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+
+
+
+
+
+
+
+/* content Subscribe started */
+
+.content-section {
+    border-radius: 8px;
+    display: none;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    -o-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+
+.content-section .wrapper {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+    .content-section .title-wrapper {
+        text-align: center;
+    }
+
+.wrapper {
+    min-width: 320px;
+    max-width: 1200px;
+    padding: 0;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+    .content-section .subscribe-form-wrapper {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: -20px;
+    }
+
+.content-section .section-title {
+    color: #f0f0f0;
+    margin-top: 0;
+}
+
+.content-section .section-sub-title {
+    position: relative;
+    color: #e50979;
+    margin-top: -2.7rem;
+    margin-bottom: 1.8rem;
+    font-size: 2.2rem;
+    line-height: .9;
+}
+
+.content-section .section-description {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.subscribe-form-wrapper {
+    width: 33.3333333332%;
+    margin: 0 auto;
+}
+
+.content-section .social-icons {
+    text-align: center;
+    padding: 0;
+    margin: 3rem auto;
+    padding-top: 50px;
+    list-style: none;
+}
+
+    .content-section .social-icons li {
+        display: inline-block;
+        padding-left: 20px;
+        opacity: 0;
+    }
+
+        .content-section .social-icons li a {
+            font-size: 20px;
+            color: #999;
+            transition: color .3s ease;
+        }
+
+            .content-section .social-icons li a:hover {
+                color: #e50979;
+            }
+
+.subscribe-form-field:before, .contact-form-field:before, a.close-section:before, a.scroll-top:before {
+    display: inline-block;
+    font-family: "Material Design Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.subscribe-form-field:before {
+    content: '\F156';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    color: #ee5c42;
+    margin: -.5em 0 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.content-section input[type='text'],
+.content-section input[type='email'],
+.content-section input[type='password'],
+.content-section textarea {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.subscribe-form-field input {
+    padding-right: 2em;
+}
+
+.subscribe-form-field.has-error input {
+    border-bottom-color: #ee5c42;
+}
+
+input[type="password"]:focus, input[type="text"]:focus, input[type="email"]:focus, input:focus:not([type]), textarea:focus {
+    border-color: #fad36a;
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"], .home-buttons a {
+    background: #01baf3;
+    border: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0.75rem 0;
+    padding: 0 2.25rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    outline: none;
+    position: relative;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[type="password"], input[type="text"], input[type="email"], input:not([type]), textarea {
+    background: none;
+    border: 0;
+    border-bottom: 2px solid #d4d4d4;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    color: #4c6064;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    margin: 0.75rem 0;
+    padding: 0;
+    height: 3rem;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    display: block;
+    max-width: 100%;
+    outline: none;
+    -webkit-backface-visibility: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.balls {
+    position: absolute;
+    bottom: 70px;
+    z-index: -1;
+}
+
+    .balls span {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        border-radius: 100%;
+        background-color: #ffb600;
+    }
+
+    .balls span:first-child {
+        width: 50px;
+        height: 50px;
+        left: 200px;
+        bottom: -90px;
+        border-radius: 100%;
+        background-color: #e50979;
+    }
+
+    .balls span:nth-child(2) {
+        position: absolute;
+        left: -30px;
+        width: 270px;
+        height: 270px;
+        border-radius: 100%;
+        background-color: #ffb600;
+    }
+
+    .balls span:last-child {
+        width: 220px;
+        height: 220px;
+        border-radius: 100%;
+        background-color: #3bf160;
+        right: -50px;
+        bottom: -100px;
+    }
+
+
+
+
+
+
+/* Custom styles for Tingle.js plugin */
+
+.tingle-modal-box__content {
+    padding: 1.8rem;
+}
+
+button.tingle-modal__close {
+    box-shadow: none;
+    font-size: 3.5rem
+}
+
+button#subscribe-form-submit {
+    color: #fff;
+    background: #e50979;
+    box-shadow: inset 0 0 0 2px #e50979;
+}
+
+.content-section .tingle-modal-box {
+    position: relative;
+    width: 40%;
+    overflow: hidden;
+    height: 500px;
+    border-radius: 8px;
+}
+
+    
+
+
+
+
+
+
+
+/* Custom styles for Parsley.js plugin */
+
+.parsley-required, .parsley-type {
+    font-size: 12px;
+    color: #ec6969;
+    list-style-type: none;
+}
+
+
+
+
+
+/* Custom styles for jQuery Countdown.js section */
+
+#countdown {
+    width: 465px;
+    height: 112px;
+    background: transparent;
+    margin: auto;
+    padding: 24px 0;
+}
+
+    #countdown span {
+        width: 94px;
+        height: 84px;
+        position: relative;
+        font-size: 3.5rem;
+        color: #01baf3;
+        font-weight: 700;
+        display: inline-block;
+        line-height: 1.6;
+        text-align: center;
+        margin: 0 .3em 0 0;
+        background-color: #333;
+
+        border-radius: 7px;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        -o-border-radius: 7px;
+    }
+
+        #countdown span:first-child {
+            margin-left: 0;
+        }
+
+        #countdown span:last-child {
+            margin-right: 0;
+        }
+
+            #countdown span span {
+                font-size: .2em;
+                color: #f3f3f3;
+                font-weight: 400;
+                letter-spacing: 1px;
+                display: block;
+                line-height: 1.5rem;
+                margin: 0;
+                -webkit-opacity: .8;
+                -moz-opacity: .8;
+                opacity: .8;
+                position: absolute;
+                right: -4.5rem;
+                bottom: -0.3em;
+                background-color: transparent;
+                border-radius: initial;
+
+                -webkit-transform: rotate(-90deg) translateX(100%);
+                -moz-transform: rotate(-90deg) translateX(100%);
+                -ms-transform: rotate(-90deg) translateX(100%);
+                -o-transform: rotate(-90deg) translateX(100%);
+                transform: rotate(-90deg) translateX(100%);
+
+                -webkit-transform-origin: right bottom;
+                -moz-transform-origin: right bottom;
+                -ms-transform-origin: right bottom;
+                -o-transform-origin: right bottom;
+                transform-origin: right bottom;
+            }
+
+
+
+
+.video-controls {
+    position: absolute !important;
+    z-index: 2;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    visibility: visible;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
+    -webkit-transition: all 0.5s 0.5s ease;
+    -moz-transition: all 0.5s 0.5s ease;
+    transition: all 0.5s 0.5s ease;
+}
+
+.video-controls a {
+    font-size: 2rem;
+    color: #fff;
+    border: 0;
+    -webkit-opacity: 0.5;
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
+/* Custom styles for Home Style 2 */
+
+#style2 .former #button-subscribe {
+    background: #3bf160;
+    color: #444;
+}
+
+    #style2 .former #button-subscribe:hover {
+        color: #fff;
+    }
+
+#style2 .content-section .section-sub-title {
+    color: #3bf160;
+}
+
+#style2 input[type="submit"] {
+    background: #3bf160;
+    color: #444;
+}
+
+    #style2 input[type="submit"]:hover {
+        color: #fff;
+    }
+
+
+
+
+/* Custom styles for Home Style 3 */
+
+#style3 .former #button-subscribe {
+    background: #17b98d;
+    color: #15386e;
+}
+
+    #style3 .former #button-subscribe:hover {
+        color: #fff;
+    }
+
+#style3 .content-section .section-sub-title {
+    color: #17b98d;
+}
+
+#style3 input[type="submit"] {
+    background: #17b98d;
+    color: #b3d4fc;
+}
+
+    #style3 input[type="submit"]:hover {
+        color: #fff;
+    }
+
+
+
+
+/* Custom styles for Home Style 4 */
+
+#style4 .former #button-subscribe {
+    background: #a8e733;
+    color: #ad3038;
+}
+
+    #style4 .former #button-subscribe:hover {
+        color: #fff;
+    }
+
+#style4 .content-section .section-sub-title {
+    color: #a8e733;
+}
+
+#style4 input[type="submit"] {
+    background: #a8e733;
+    color: #4c6064;
+}
+
+    #style4 input[type="submit"]:hover {
+        color: #fff;
+    }
+
+
+
+
+/* ==========================================================================
+   End of Main classes set built by Riva Yudha for Duotonal HTML Template
+   ========================================================================== */

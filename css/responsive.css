@@ -1,0 +1,288 @@
+
+/*
+
+* Responsive.css built by Riva Yudha 2017
+* to store all media queries needed in some gadgets/devices
+
+* If your gadget's not listed below, then its queries has been concatenated all together within
+* existing devices listed.
+
+*/
+
+
+
+/* iPhone 6 Plus - orientation Portrait */
+
+@media only screen
+	and (max-device-width: 414px)
+	and (max-device-width: 736px)
+	and (orientation: portrait) {
+
+
+	main {
+		padding: 15px;
+		flex-wrap: nowrap;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+		main section {
+			padding-right: 0;
+		}
+
+
+	#countdown span {
+		width: 100px;
+		height: 100px;
+		font-size: 2em;
+		line-height: 2;
+	}
+
+	.content-section .wrapper {
+		min-width: initial;
+	}
+
+	.tingle-modal * {
+	    box-sizing: border-box;
+	    text-align: center;
+	    padding-left: 0;
+	}
+
+	.content-section .tingle-modal-box {
+	    width: 100%;
+	}
+
+	button.tingle-modal__close {
+	    box-shadow: none;
+	    font-size: 1rem;
+	    margin: auto;
+	    width: 4rem;
+	    height: 4rem;
+	    line-height: .4;
+	    top: 20px;
+	}
+
+	.tingle-modal__closeIcon {
+	    font-size: 3rem !important;
+	    margin-right: 0!important;
+	    vertical-align: initial !important;
+	}
+
+}
+
+
+/*==============================================================*/
+
+
+/* iPhone 6 Plus - orientation Landscape */
+
+@media only screen
+	and (min-device-width: 414px)
+	and (max-device-width: 736px)
+	and (orientation: landscape) {
+
+	main {
+	    padding: 15px;
+	    background-size: cover;
+	    width: 100%;
+	    height: 100vh;
+	    display: flex;
+	    flex-wrap: nowrap;
+	    justify-content: flex-start;
+	    align-items: center;
+	}
+ 
+ 	.captioner {
+ 		margin-bottom: 15px,
+ 	}
+
+	#countdown {
+		height: 80px;
+		padding: 10px 0;
+	}
+
+		#countdown span {
+			width: 70px;
+			height: 70px;
+			font-size: 2em;
+			line-height: 2;
+		}
+
+			#countdown span span {
+				font-size: .4em;
+				right: -3.4rem;
+				bottom: 0;
+			}
+
+	#button-subscribe {
+		font-size: 1rem;
+	    height: 2.4rem;
+	    line-height: 2rem;
+	    margin: 0;
+	}
+
+	.subscribe-form-field * {
+	    text-align: center;
+	}
+
+	.content-section .tingle-modal-box {
+		width: 80%;
+	}
+
+}
+
+
+/*===================================================*/
+
+
+/* iPhone 6 Plus - orientation Portrait */
+
+@media only screen
+	and (min-device-width: 414px)
+	and (max-device-width: 736px)
+	and (orientation: portrait) {
+
+
+	#countdown span {
+		width: 70px;
+		height: 70px;
+		font-size: 2em;
+		line-height: 2;
+	}
+
+		#countdown span span {
+			font-size: .4em;
+			right: -3.4rem;
+			bottom: 0;
+		}
+
+
+    #countdown #tiles > span {
+        width: 30px;
+        font-size: 1.6rem;
+    }
+
+    #countdown .labels li {
+        width: 84px;
+    }
+
+
+}
+
+
+/*=============================================================*/
+
+
+/* iPhone 6 - orientation Portrait */
+
+@media only screen
+	and (min-device-width: 375px)
+	and (max-device-width: 667px)
+	and (orientation: portrait) {
+
+
+	#countdown span {
+		width: 70px;
+		height: 70px;
+		font-size: 2em;
+		line-height: 2;
+	}
+
+		#countdown span span {
+			font-size: .4em;
+			right: -3.4rem;
+			bottom: 0;
+		}
+
+}
+
+
+/*================================================================*/
+
+
+/* iPhone 5 - orientation Portrait */
+
+@media only screen
+	and (min-device-width: 320px)
+	and (max-device-width: 568px)
+	and (orientation: portrait) {
+
+
+	#countdown {
+		height: 70px;
+	}
+
+	#countdown span {
+		width: 60px;
+		height: 60px;
+		font-size: 2em;
+		line-height: 2;
+	}
+
+		#countdown span span {
+			font-size: .3em;
+			right: -3.4rem;
+			bottom: 0;
+		}
+
+}
+
+
+/*==============================================================*/
+
+
+/* iPhone 5 - orientation Landscape */
+
+@media only screen
+	and (min-device-width: 320px)
+	and (max-device-width: 568px)
+	and (orientation: landscape) {
+
+	.captioner h2 {
+		font-size: 1.6em;
+	}
+
+	#countdown {
+		height: 70px;
+	}
+
+	#countdown span {
+		width: 60px;
+		height: 60px;
+		font-size: 2em;
+		line-height: 2;
+	}
+
+		#countdown span span {
+			font-size: .3em;
+			right: -3.4rem;
+			bottom: 0;
+		}
+
+}
+
+
+/*==============================================================*/
+
+
+/* iPad Pro - orientation Portrait */
+
+@media only screen
+	and (min-device-width: 1024px)
+	and (max-device-width: 1366px)
+	and (orientation: portrait) {
+
+	.captioner h2 {
+		line-height: 1.4;
+	}
+
+	.content-section .tingle-modal-box {
+		width: 80%;
+	}
+
+	.tingle-modal-box__content {
+	    padding: 3rem;
+	}
+
+}

@@ -4,3 +4,12 @@
     margin-bottom: 0;
     margin-top: 100px;
 }
+a.reset {
+    transition: .3s all;
+    color: #999;
+}
+a.reset:hover {
+    color: #2ac57d;
+    text-decoration: underline;
+}
+
